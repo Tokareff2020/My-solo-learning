@@ -1,0 +1,173 @@
+Enter your numbers:5 6
+Your fuzzy number: -1 5 11
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:1
+Enter your numbers:6 5
+Your fuzzy number: 1 6 11
+
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:2
+Your fuzzy number: 1 6 11
+
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:3
+Enter your numbers:10 13
+Your fuzzy number: -2 16 34
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:4
+Enter your numbers:13 10
+Your fuzzy number: -22 -7 8
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:5
+Enter your numbers:5 8
+Your fuzzy number: 0.0769231 1.2 -3.66667
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:6
+Enter your numbers:5 8
+Your fuzzy number: 15 30 125
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:7
+Your fuzzy number: 0.0909091 0.166667 1
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:1
+Enter your numbers:5 6
+Your fuzzy number: -1 5 11
+
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:8
+Enter your numbers:10 6
+Second number more
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:1
+Enter your numbers:0 0
+Your fuzzy number: 0 0 0
+
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:7
+Choice other values
+Your fuzzy number: 0 0 0
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:5
+Enter your numbers:0 0
+Choice other values
+Your fuzzy number: 0 0 0
+Menu:
+1 - data input
+2 - data output
+3 - adding numbers
+4 - subtracting numbers
+5 - dividing numbers
+6 - multiplication numbers
+7 - inverse number
+8 - find out what's more
+9 - exit
+Your choice:9
+Good bye!
