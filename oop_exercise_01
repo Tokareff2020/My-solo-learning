@@ -62,7 +62,7 @@ class FuzzyNumber
         void inv(float x1, float e1) // Ф-я нахождения обратного числа
         {
             if (x1 < 0)
-                x1 *= -1;
+                x1 = -1;
             if (x1 == 0 || e1 == 0)
                 cout << "Choice other values" << endl;
             else {
