@@ -173,6 +173,7 @@ int main()
             break;
         case 9:
             cout << "Good bye!";
+            break;
         default:
             cout << "Wrong value!" << endl;
         }
