@@ -1,0 +1,183 @@
+#include <iostream>
+using namespace std;
+
+class FuzzyNumber
+{
+    private:
+        float x1, e1, x2, e2 = 0;
+       float A[3] , B[3];
+    public:
+        void set_A(float x1, float e1) //функция устанавливает A 
+        {
+            A[0] = x1 - e1;
+            A[1] = x1;
+            A[2] = x1 + e1;
+        }
+        void set_B(float x2, float e2)
+        {
+            B[0] = x2 - e2;
+            B[1] = x2;
+            B[2] = x2 + e2;
+        }
+        void get_A() //ф-я выводит A
+        {
+            cout << "Your fuzzy number:";
+            for (int i = 0; i != 3; i++)
+            {
+                
+                cout << " " << A[i];
+            }
+            cout << endl;
+
+        }
+        void get_B()
+        {
+            cout << "Your number:";
+            for (int i = 0; i != 3; i++)
+            {
+
+                cout << " " << B[i];
+            }
+            cout << endl;
+
+        }
+        void sum(float x1, float x2, float e1, float e2) // Ф-ция суммы
+        {
+            A[0] = x1 + x2 - e1 - e2;
+            A[1] = x1 + x2;
+            A[2] = x1 + x2 + e1 + e2;
+        }
+        void min(float x1, float x2, float e1, float e2) // Ф-я вычитания
+        {
+            A[0] = x1 - x2 - e1 - e2;
+            A[1] = x1 - x2;
+            A[2] = x1 - x2 + e1 + e2;
+        }
+        void mult(float x1, float x2, float e1, float e2) // Ф-я умножения
+        {
+            A[0] = x1 * x2 - x2 * e1 - x1 * e1 + e1 * e2;
+            A[1] = x1 * x2;
+            A[2] = x1 * x2 + x2 * e1 + x1 * e1 + e1 * e2;
+        }
+        void inv(float x1, float e1) // Ф-я нахождения обратного числа
+        {
+            if (x1 < 0)
+                x1 *= -1;
+            if (x1 == 0 || e1 == 0)
+                cout << "Choice other values" << endl;
+            else {
+                A[0] = 1 / (x1 + e1);
+                A[1] = 1 / x1;
+                A[2] = 1 / (x1 - e1);
+            }
+        }
+        void div(float x1, float x2, float e1, float e2) // Ф-я деления
+        {
+            if( x2 + e2 == 0 || x2 <= 0 || x2 - e2 == 0)
+                cout << "Choice other values" << endl;
+            else
+            {
+                A[0] = (x1 - e1) / (x2 + e2);
+                A[1] = x1 / x2;
+                A[2] = (x1 + e1) / (x2 - e2);
+            }
+        }
+        void more(float x1, float x2) // Ф-я сравнения
+        {
+            if (x1 > x2)
+                cout << "First number more" << endl;
+            else if (x1 == x2)
+                cout << "Numbers are equal" << endl;
+            else
+                cout << "Second number more" << endl;
+        }
+        
+};
+
+
+
+
+
+
+
+
+
+
+
+int main()
+{
+    FuzzyNumber objFuzzyNumber;
+
+    int a = 0;
+    float x1, e1, x2, e2 = 0;
+    float A[3], B[3];
+    cout << "Enter your numbers:";
+    cin >> x1 >> e1;
+    objFuzzyNumber.set_A(x1, e1);
+    objFuzzyNumber.get_A();
+    while (a != 9)
+    {
+        cout << "Menu:\n1 - data input\n2 - data output\n3 - adding numbers\n4 - subtracting numbers\n5 - dividing numbers\n6 - multiplication numbers\n7 - inverse number\n8 - find out what's more\n9 - exit\nYour choice:";
+        cin >> a;
+        switch (a)
+        {
+        case 1:
+            cout << "Enter your numbers:";
+            cin >> x1 >> e1;
+            objFuzzyNumber.set_A(x1, e1);
+            
+            objFuzzyNumber.get_A();
+            cout << endl;
+            break;
+        case 2:
+           
+            objFuzzyNumber.get_A();
+            cout << endl;
+            break;
+        case 3:
+            cout << "Enter your numbers:";
+            cin >> x2 >> e2;
+            objFuzzyNumber.set_B(x2, e2);
+            objFuzzyNumber.sum(x1,x2,e1,e2);
+            objFuzzyNumber.get_A();
+            break;
+        case 4:
+            cout << "Enter your numbers:";
+            cin >> x2 >> e2;
+            objFuzzyNumber.set_B(x2, e2);
+            objFuzzyNumber.min(x1, x2, e1, e2);
+            objFuzzyNumber.get_A();
+            break;
+        case 5:
+            cout << "Enter your numbers:";
+            cin >> x2 >> e2;
+            objFuzzyNumber.set_B(x2, e2);
+            objFuzzyNumber.div(x1, x2, e1, e2);
+            objFuzzyNumber.get_A();
+            break;
+        case 6:
+            cout << "Enter your numbers:";
+            cin >> x2 >> e2;
+            objFuzzyNumber.set_B(x2, e2);
+            objFuzzyNumber.mult(x1, x2, e1, e2);
+            objFuzzyNumber.get_A();
+            break;
+        case 7:
+            objFuzzyNumber.inv(x1, e1);
+            objFuzzyNumber.get_A();
+            break;
+        case 8:
+            cout << "Enter your numbers:";
+            cin >> x2 >> e2;
+            objFuzzyNumber.more(x1, x2);
+            break;
+        case 9:
+            cout << "Good bye!";
+        default:
+            cout << "Wrong value!" << endl;
+        }
+
+
+
+    }
+}
